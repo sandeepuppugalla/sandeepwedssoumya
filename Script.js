@@ -1,15 +1,44 @@
-const target=new Date('2026-09-04T10:35:00');
+const targetDate = new Date("September 4, 2026 10:35:00").getTime();
 
-function update(){
-  const d=target-new Date();
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-  if(d<0) return;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+    const seconds = Math.floor(
+        (distance % (1000 * 60)) / 1000
+    );
 
-  const days=Math.floor(d/86400000);
+    document.getElementById("countdown").innerHTML = `
+        <div class="timer-box">
+            <span>${days}</span>
+            <small>Days</small>
+        </div>
 
-  document.getElementById('countdown').innerHTML=
-    days + ' days to go';
+        <div class="timer-box">
+            <span>${hours}</span>
+            <small>Hours</small>
+        </div>
+
+        <div class="timer-box">
+            <span>${minutes}</span>
+            <small>Minutes</small>
+        </div>
+
+        <div class="timer-box">
+            <span>${seconds}</span>
+            <small>Seconds</small>
+        </div>
+    `;
 }
 
-update();
-setInterval(update,1000);
+setInterval(updateCountdown, 1000);
+updateCountdown();
