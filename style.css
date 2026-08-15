@@ -1,8 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
 
-body{font-family:Arial,sans-serif;margin:0;background:#faf6ee;color:#5b4636;text-align:center}
-.hero{padding:60px 20px;background:linear-gradient(#fff8e8,#f3e1b0)}
-.logo{max-width:180px;border-radius:8px}
-h1{font-size:3rem}
-section{padding:40px 20px}
-.btn{display:inline-block;padding:12px 20px;background:#b08d57;color:white;text-decoration:none;border-radius:8px}
-footer{padding:30px;background:#f3e1b0}
+body{
+    margin:0;
+    font-family:'Cinzel', serif;
+    background:#fdf8ef;
+    color:#4e3928;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.25)
+    ),
+    url('bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+
+/* LOGO */
+
+.logo{
+    width:180px;
+    margin-bottom:20px;
+}
+
+/* TIMER */
+
+#countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.timer-box{
+    width:90px;
+    height:90px;
+
+    background:white;
+    border-radius:15px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+}
+
+.timer-box span{
+    font-size:28px;
+    font-weight:bold;
+    color:#b8860b;
+}
+
+.timer-box small{
+    font-size:12px;
+}
+
+/* SECTION */
+
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.card{
+    max-width:900px;
+    margin:auto;
+
+    background:white;
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+
+    background:#b8860b;
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* GOLD BORDER */
+
+.card{
+    border:2px solid #d4af37;
+}
