@@ -416,76 +416,36 @@ body{
     margin-bottom:30px;
 }
 
-.envelope-container{
-    cursor:pointer;
-}
-
-.envelope{
-    width:260px;
-    height:170px;
-    background:#d4af37;
-    position:relative;
-    margin:auto;
-    border-radius:8px;
-    box-shadow:
-    0 15px 40px rgba(0,0,0,.2);
-}
-
-.envelope-flap{
-    position:absolute;
-    width:100%;
-    height:90px;
-    background:#c2952d;
-
-    clip-path:
-    polygon(
-    0 0,
-    100% 0,
-    50% 100%
-    );
-
-    transform-origin:top;
-    transition:1s;
-}
-
-.invitation-card{
-    position:absolute;
-    width:220px;
-    height:130px;
-    background:white;
-    top:20px;
-    left:20px;
-    border-radius:6px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+.envelope-wrapper{
     text-align:center;
+    cursor:pointer;
+    margin-top:20px;
+}
 
-    color:#9f7420;
+.envelope-image{
+    width:380px;
+    max-width:90vw;
 
-    transition:1s;
+    transition:all .4s ease;
+
+    filter:
+    drop-shadow(
+        0 12px 30px rgba(0,0,0,.18)
+    );
+}
+
+.envelope-wrapper:hover .envelope-image{
+    transform:
+    translateY(-8px)
+    scale(1.04);
 }
 
 .tap-text{
-    margin-top:20px;
+    margin-top:15px;
+
+    font-size:16px;
+
     color:#9f7420;
-}
 
-.envelope-image{
-
-    width:320px;
-
-    max-width:85vw;
-
-    transition:.4s;
-}
-
-.envelope-wrapper:hover
-.envelope-image{
-
-    transform:
-    translateY(-5px)
-    scale(1.03);
+    letter-spacing:.5px;
 }
