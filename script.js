@@ -65,3 +65,32 @@ function updateCountdown() {
 updateCountdown();
 
 setInterval(updateCountdown,1000);
+
+const hero = document.querySelector(".hero");
+
+const backgrounds = [
+    "assets/bg1.jpg",
+    "assets/bg2.jpg",
+    "assets/bg3.jpg"
+];
+
+let current = 0;
+
+setInterval(() => {
+
+    current++;
+
+    if(current >= backgrounds.length){
+        current = 0;
+    }
+
+    hero.style.backgroundImage =
+    `
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url('${backgrounds[current]}')
+    `;
+
+}, 5000);
