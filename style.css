@@ -184,17 +184,17 @@ body{
 
 .time-box{
 
-    width:95px;
-    height:95px;
+    width:105px;
+    height:105px;
 
     background:#ffffff;
 
-    border-radius:18px;
+    border-radius:20px;
 
     border:2px solid #d4af37;
 
     box-shadow:
-    0 8px 25px rgba(0,0,0,.12);
+    0 10px 30px rgba(0,0,0,.15);
 
     display:flex;
     flex-direction:column;
@@ -204,22 +204,28 @@ body{
 
 .time-box span{
 
-    font-size:34px;
-    font-weight:700;
-    color:#b8860b;
+    font-size:42px;
+    font-weight:800;
+
+    color:#c89b2d;
+
     line-height:1;
 }
 
 .time-box small{
 
-    margin-top:6px;
+    margin-top:8px;
 
-    font-size:13px;
+    font-size:14px;
 
-    color:#555;
+    font-weight:600;
+
+    color:#666;
+
     letter-spacing:1px;
-}
 
+    text-transform:uppercase;
+}
 /* BUTTONS */
 
 .hero-btn,
@@ -275,7 +281,7 @@ body{
 }
 
 .card h2{
-    font-family:'Noto Serif Telugu',serif;
+    font-size:2rem;
     color:#9f7420;
     margin-bottom:15px;
 }
@@ -285,7 +291,7 @@ body{
 }
 
 .card p{
-    margin-bottom:12px;
+    font-size:1.15rem;
     line-height:1.8;
 }
 
@@ -363,12 +369,11 @@ body{
         width:85px;
         height:85px;
     }
-
+    
     .time-box span{
-        font-size:30px;
-        font-weight:700;
+        font-size:32px;
     }
-
+    
     .time-box small{
         font-size:12px;
     }
@@ -383,7 +388,32 @@ body{
     }
 
     .envelope-image{
-        width:320px;
+        width:400px;
+    }
+
+    .card h2{
+        font-size:1.8rem;
+    }
+    
+    .card p{
+        font-size:1.1rem;
+        line-height:1.8;
+    }
+    
+    .card a{
+        font-size:1rem;
+    }
+    
+    .hero p{
+        font-size:1.15rem;
+    }
+    
+    .hero-date{
+        font-size:1.3rem;
+    }
+    
+    .footer p{
+        font-size:1rem;
     }
 }
 
