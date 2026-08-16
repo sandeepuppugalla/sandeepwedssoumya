@@ -385,7 +385,29 @@ body{
     }
 
     .card{
-        padding:25px;
+
+        padding:28px;
+
+        border-radius:20px;
+
+        background:
+
+        radial-gradient(
+        circle at top right,
+        rgba(212,175,55,.18),
+        transparent 35%
+        ),
+
+        radial-gradient(
+        circle at bottom left,
+        rgba(212,175,55,.18),
+        transparent 35%
+        ),
+
+        #fffdf8;
+
+        box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
     }
     
     .envelope-image{
