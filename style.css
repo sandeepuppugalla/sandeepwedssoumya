@@ -381,6 +381,10 @@ body{
     .card{
         padding:25px;
     }
+
+    .envelope-image{
+        width:320px;
+    }
 }
 
 .divider{
