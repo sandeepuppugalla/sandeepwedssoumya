@@ -116,9 +116,15 @@ body{
 }
 
 .hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-    letter-spacing:2px;
+
+    font-size:4.8rem;
+
+    letter-spacing:3px;
+
+    text-shadow:
+    0 5px 25px rgba(0,0,0,.4);
+
+    margin-bottom:15px;
 }
 
 .hero span{
@@ -126,8 +132,16 @@ body{
 }
 
 .hero p{
-    font-size:1.3rem;
+
+    font-size:1.4rem;
+
+    max-width:700px;
+
+    margin:auto;
+
     margin-bottom:35px;
+
+    line-height:1.8;
 }
 
 /* COUNTDOWN */
@@ -294,4 +308,15 @@ body{
     .card{
         padding:30px;
     }
+}
+
+.divider{
+
+    color:#ffd86b;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    letter-spacing:10px;
 }
