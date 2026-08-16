@@ -22,44 +22,72 @@ body{
 #loader{
     position:fixed;
     inset:0;
-    background:linear-gradient(
+
+    background:
+    linear-gradient(
         135deg,
-        #fff8ec,
-        #f6e3b4
+        #f9f1df,
+        #f2e2b8
     );
 
     display:flex;
     justify-content:center;
     align-items:center;
+
     z-index:9999;
 }
 
 .loader-content{
     text-align:center;
+    width:90%;
 }
 
 .loader-logo{
-    width:320px;
-    max-width:85vw;
-    margin-bottom:25px;
+    width:420px;
+    max-width:95vw;
+
+    margin-bottom:30px;
+
+    filter:
+    drop-shadow(
+        0 0 25px rgba(212,175,55,.5)
+    );
 }
 
 .loader-content h2{
-    font-family:'Noto Serif Telugu',serif;
-    margin-bottom:25px;
-    color:#8b6b25;
+
+    font-family:
+    'Noto Serif Telugu',
+    serif;
+
+    font-size:32px;
+
+    color:#9f7420;
+
+    margin-bottom:30px;
 }
 
 .loader-content button{
-    border:none;
-    background:#b88a2a;
-    color:white;
-    padding:15px 30px;
-    border-radius:50px;
-    font-size:16px;
-    cursor:pointer;
-}
 
+    background:#c6952c;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.15);
+}
 /* HERO */
 
 .hero{
@@ -304,29 +332,27 @@ body{
 
 @media(max-width:768px){
 
-    .hero h1{
-        font-size:2.8rem;
+    .loader-logo{
+        width:300px;
+        max-width:90vw;
+    }
+
+    .loader-content h2{
+        font-size:22px;
+    }
+
+    .loader-content button{
+        font-size:18px;
+        padding:16px 36px;
     }
 
     .hero-logo{
-        width:280px;
+        width:360px;
+        max-width:95vw;
     }
 
-    .loader-logo{
-        width:240px;
-    }
-
-    .time-box{
-        width:80px;
-        height:80px;
-    }
-
-    .time-box span{
-        font-size:24px;
-    }
-
-    .card{
-        padding:30px;
+    .hero h1{
+        font-size:2.7rem;
     }
 }
 
