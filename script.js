@@ -1,5 +1,28 @@
-function openInvite() {
-    document.getElementById("loader").style.display = "none";
+function openInvite(){
+
+    const flap =
+    document.querySelector(
+        ".envelope-flap"
+    );
+
+    const card =
+    document.querySelector(
+        ".invitation-card"
+    );
+
+    flap.style.transform =
+    "rotateX(180deg)";
+
+    card.style.transform =
+    "translateY(-120px)";
+
+    setTimeout(()=>{
+
+        document
+        .getElementById("loader")
+        .style.display="none";
+
+    },1200);
 }
 
 const weddingDate =
