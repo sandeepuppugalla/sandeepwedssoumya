@@ -366,16 +366,17 @@ body{
     }
 
     .time-box{
-        width:85px;
-        height:85px;
+        width:75px;
+        height:75px;
     }
     
     .time-box span{
-        font-size:32px;
+        font-size:28px;
+        font-weight:800;
     }
     
     .time-box small{
-        font-size:12px;
+        font-size:11px;
     }
 
     .hero-btn{
