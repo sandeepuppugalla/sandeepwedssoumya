@@ -472,3 +472,20 @@ body{
     margin-top:20px;
     color:#9f7420;
 }
+
+.envelope-image{
+
+    width:320px;
+
+    max-width:85vw;
+
+    transition:.4s;
+}
+
+.envelope-wrapper:hover
+.envelope-image{
+
+    transform:
+    translateY(-5px)
+    scale(1.03);
+}
