@@ -1,0 +1,1 @@
+setInterval(()=>{document.getElementById('countdown').innerHTML='Wedding Countdown';},1000)
