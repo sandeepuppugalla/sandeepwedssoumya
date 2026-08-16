@@ -386,22 +386,22 @@ body{
     .card{
         padding:25px;
     }
-
+    
     .envelope-image{
-        width:600px;
+        width:450px;
     }
-
+    
     .card h2{
-        font-size:2.5rem;
+        font-size:1.8rem;
     }
     
     .card p{
-        font-size:2.5rem;
+        font-size:1.1rem;
         line-height:1.8;
     }
     
     .card a{
-        font-size:2.5rem;
+        font-size:1rem;
     }
     
     .hero p{
