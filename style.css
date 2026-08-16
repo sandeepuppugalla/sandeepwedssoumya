@@ -90,10 +90,19 @@ body{
 }
 
 .hero-logo{
-    width:220px;
+
+    width:240px;
+
     margin-bottom:25px;
 
-    animation:floatLogo 4s ease-in-out infinite;
+    filter:
+    drop-shadow(
+        0 0 30px
+        rgba(255,215,0,.6)
+    );
+
+    animation:
+    floatLogo 4s ease-in-out infinite;
 }
 
 @keyframes floatLogo{
