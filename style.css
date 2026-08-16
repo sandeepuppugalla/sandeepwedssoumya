@@ -1,1 +1,285 @@
-body{font-family:Georgia}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Serif+Telugu:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cinzel',serif;
+    background:#faf6ee;
+    color:#4b3425;
+    overflow-x:hidden;
+}
+
+/* LOADER */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(
+        135deg,
+        #fff8ec,
+        #f6e3b4
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-logo{
+    width:180px;
+    margin-bottom:25px;
+}
+
+.loader-content h2{
+    font-family:'Noto Serif Telugu',serif;
+    margin-bottom:25px;
+    color:#8b6b25;
+}
+
+.loader-content button{
+    border:none;
+    background:#b88a2a;
+    color:white;
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.35)
+    ),
+    url('assets/bg1.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-overlay{
+    width:90%;
+    max-width:1000px;
+    color:white;
+}
+
+.hero-logo{
+    width:220px;
+    margin-bottom:25px;
+
+    animation:floatLogo 4s ease-in-out infinite;
+}
+
+@keyframes floatLogo{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+    letter-spacing:2px;
+}
+
+.hero span{
+    color:#ffd86b;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+/* COUNTDOWN */
+
+#countdown{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.time-box{
+    width:100px;
+    height:100px;
+
+    background:rgba(255,255,255,.92);
+
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.2);
+}
+
+.time-box span{
+    font-size:32px;
+    font-weight:bold;
+    color:#b88a2a;
+}
+
+.time-box small{
+    font-size:12px;
+    color:#555;
+}
+
+/* BUTTONS */
+
+.hero-btn,
+.btn{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    background:#b88a2a;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.hero-btn:hover,
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#9f7420;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:90px 20px;
+}
+
+.card{
+
+    max-width:850px;
+
+    margin:auto;
+
+    padding:45px;
+
+    background:white;
+
+    border-radius:24px;
+
+    text-align:center;
+
+    border:2px solid #e6c77a;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.card h2{
+    font-family:'Noto Serif Telugu',serif;
+    color:#9f7420;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:20px;
+}
+
+.card p{
+    margin-bottom:12px;
+    line-height:1.8;
+}
+
+/* FOOTER */
+
+.footer{
+
+    background:
+    linear-gradient(
+        135deg,
+        #f6e3b4,
+        #fff8ec
+    );
+
+    padding:90px 20px;
+
+    text-align:center;
+}
+
+.footer h2{
+
+    font-family:
+    'Noto Serif Telugu',
+    serif;
+
+    color:#8b6b25;
+
+    margin-bottom:20px;
+}
+
+.footer p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.6rem;
+    }
+
+    .hero-logo{
+        width:160px;
+    }
+
+    .time-box{
+        width:80px;
+        height:80px;
+    }
+
+    .time-box span{
+        font-size:24px;
+    }
+
+    .card{
+        padding:30px;
+    }
+}
